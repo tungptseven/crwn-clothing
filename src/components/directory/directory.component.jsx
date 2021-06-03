@@ -1,7 +1,8 @@
-import React from 'react'
+import React from 'react';
 
-import './directory.styles.scss'
-import MenuItem from '../menu-item/menu-item.component'
+import MenuItem from '../menu-item/menu-item.component';
+
+import './directory.styles.scss';
 
 class Directory extends React.Component {
   constructor() {
@@ -13,7 +14,7 @@ class Directory extends React.Component {
           title: 'hats',
           imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
           id: 1,
-          linkUrl: 'hats'
+          linkUrl: ''
         },
         {
           title: 'jackets',
@@ -42,7 +43,7 @@ class Directory extends React.Component {
           linkUrl: ''
         }
       ]
-    }
+    };
   }
 
   render() {
@@ -52,8 +53,8 @@ class Directory extends React.Component {
           <MenuItem key={id} {...otherSectionProps} />
         ))}
       </div>
-    )
+    );
   }
 }
 
-export default Directory
+export default Directory;
